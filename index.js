@@ -5,7 +5,7 @@ const emojisContained = document.getElementById("emojiContainer");
 
 //add your emojis in an array
 const myEmojis = ["⏳", "🖤", "💀"]
-// //loop through emojis array
+// loop through emojis array
 function renderEmojis() {
     for (let i = 0; i < myEmojis.length; i++) {
         const emoji = document.createElement('span')
@@ -16,6 +16,7 @@ function renderEmojis() {
     
     renderEmojis()
     
+    //add push button (add emoji to end of array)
     const pushBtn = document.getElementById("push-btn")
     pushBtn.addEventListener("click", function(){
         const emojiInput = document.getElementById("emoji-input")
@@ -26,3 +27,13 @@ function renderEmojis() {
             renderEmojis()
         }
     })
+    //add the unshift button function (add emoji to beginning of array)
+    const unshiftBtn = document.getElementById("unshift-btn")
+unshiftBtn.addEventListener("click", function() {
+    const emojiInput = document.getElementById("emoji-input")
+    if (emojiInput.value) {
+        myEmojis.unshift(emojiInput.value)
+        emojiInput.value = ""
+        emojiContainer.innerHTML = ""
+        renderEmojis()
+})
