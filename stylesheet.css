@@ -6,6 +6,7 @@ body {
     margin: 10px;
     padding: 10px;
     background-image: linear-gradient(#d95d63, #FFF);
+    margin: 0 auto;
 }
 
 h1 {
@@ -13,6 +14,7 @@ h1 {
     font-size: 35px;
     font-family: "copperplate", 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 4px #000000;
+    text-align: center;
 }
 
 #push-btn,#unshift-btn {
@@ -23,6 +25,7 @@ h1 {
     font-family: "copperplate", 'Courier New', Courier, monospace;
     margin: 10px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 #shift-btn,#pop-btn {
@@ -33,9 +36,11 @@ h1 {
     font-family: "copperplate", 'Courier New', Courier, monospace;
     margin: 10px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 #emojiContainer {
     font-size: 70px;
     padding: 10px;
+    margin: 0 auto;
 }
