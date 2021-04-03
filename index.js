@@ -40,29 +40,29 @@ unshiftBtn.addEventListener("click", function(){
         renderEmojis()
     }
 })
-//create a copy of the original array
-const myEmojisCopy = [...myEmojis];
+// create a copy of the original array
+// const myEmojisCopy = [...myEmojis];
 
-//create a function
-function clearThenRenderEmojis() {
-    emojiInput.value = ""; 
-    for (let i = 0; i < myEmojisCopy.length; i++) {
-        const emojiRemove = document.createElement('span')
-        emojiContainer.append(emojiRemove)
-       }
-     }
+// //create a function
+// function clearThenRenderEmojis() {
+//     emojiInput.value = ""; 
+//     for (let i = 0; i < myEmojisCopy.length; i++) {
+//         const emojiRemove = document.createElement('span')
+//         emojiContainer.append(emojiRemove)
+//        }
+//      }
     
 
 //add button to remove an emoji from the end of the array
 const popBtn = document.getElementById("pop-btn")
 popBtn.addEventListener("click", function(){
     myEmojis.pop();
-    clearThenRenderEmojis()
+    renderEmojis()
 })
 
 //add button to remove emoji from beginning of array
 const shiftBtn = document.getElementById("shift-btn")
 shiftBtn.addEventListener("click", function(){
     myEmojis.shift();
-    clearThenRenderEmojis()
+    renderEmojis()
 })
