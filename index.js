@@ -1,7 +1,7 @@
 
 //grab the emoji container element
-const emojisContained = document.getElementById("emojiContainer");
-console.log(emojisContained)
+// const emojisContained = document.getElementById("emojiContainer");
+// console.log(emojisContained)
 
 //add your emojis in an array
 // const myEmojis = ["A", "B", "C"]
