@@ -29,11 +29,12 @@ function renderEmojis() {
     })
     //add the unshift button function (add emoji to beginning of array)
     const unshiftBtn = document.getElementById("unshift-btn")
-unshiftBtn.addEventListener("click", function() {
+unshiftBtn.addEventListener("click", function(){
     const emojiInput = document.getElementById("emoji-input")
     if (emojiInput.value) {
         myEmojis.unshift(emojiInput.value)
         emojiInput.value = ""
         emojiContainer.innerHTML = ""
         renderEmojis()
+    }
 })
