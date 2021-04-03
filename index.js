@@ -4,7 +4,7 @@ const emojisContained = document.getElementById("emojiContainer");
 // console.log(emojisContained)
 
 //add your emojis in an array
-const myEmojis = ["A", "B", "C"]
+const myEmojis = ["⏳", "🖤", "💀"]
 // //loop through emojis array
 for (let i = 0; i < myEmojis.length; i++) {
      var renderEmojis = document.createElement("span")
