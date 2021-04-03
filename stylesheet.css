@@ -30,3 +30,7 @@ h1 {
     color: aqua;
     font-family: "copperplate", 'Courier New', Courier, monospace;
 }
+
+#emojiContainer {
+    font-size: 70px;
+}
