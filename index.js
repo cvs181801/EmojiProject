@@ -6,9 +6,10 @@ const emojisContained = document.getElementById("emojiContainer");
 //add your emojis in an array
 const myEmojis = ["⏳", "🖤", "💀"]
 
-//create a copy of the original array
-const myEmojisCopy = [...myEmojis];
-// loop through emojis array
+//create a copy of the original array just in case we need it.
+//const myEmojisCopy = [...myEmojis];
+
+//create a function to loop through emojis array
 function renderEmojis() {
     for (let i = 0; i < myEmojis.length; i++) {
         const emoji = document.createElement('span')
@@ -41,16 +42,26 @@ unshiftBtn.addEventListener("click", function(){
         renderEmojis()
     }
 })
+//create a function so that we're only seeing the mutated array after removing an emoji
+function clearThenRenderEmojis() {
+    emojiInput.value = ""; 
+    for (let i = 0; i < myEmojis.length; i++) {
+        const emojiRemove = document.createElement('span')
+        emojiContainer.append(emojiRemove)
+       }
+    }
+    
+
 //add button to remove an emoji from the end of the array
 const popBtn = document.getElementById("pop-btn")
 popBtn.addEventListener("click", function(){
     myEmojis.pop();
-    renderEmojis()
+    clearThenRenderEmojis()
 })
 
 //add button to remove emoji from beginning of array
 const shiftBtn = document.getElementById("shift-btn")
 shiftBtn.addEventListener("click", function(){
     myEmojis.shift();
-    renderEmojis()
+    clearThenRenderEmojis()
 })
