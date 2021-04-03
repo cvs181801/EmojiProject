@@ -11,5 +11,5 @@ body {
 h1 {
     color: aqua;
     font-family: "copperplate", 'Courier New', Courier, monospace;
-    text-shadow: 4 4 6px darkslategrey;
+    text-shadow: 2px 2px 4px #000000;
 }
