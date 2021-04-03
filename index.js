@@ -9,6 +9,7 @@ let myEmojis = ["⏳", "🖤", "💀"]
 
 //create a function to loop through emojis array
 function renderEmojis() {
+    emojiContainer.innerHTML="";
     for (let i = 0; i < myEmojis.length; i++) {
         const emoji = document.createElement('span')
         emoji.textContent = myEmojis[i]
