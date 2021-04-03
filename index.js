@@ -7,7 +7,7 @@ const emojisContained = document.getElementById("emojiContainer");
 const myEmojis = ["⏳", "🖤", "💀"]
 
 //create a copy of the original array just in case we need it.
-//const myEmojisCopy = [...myEmojis];
+const myEmojisCopy = [...myEmojis];
 
 //create a function to loop through emojis array
 function renderEmojis() {
@@ -42,15 +42,15 @@ unshiftBtn.addEventListener("click", function(){
         renderEmojis()
     }
 })
-//create a function so that we're only seeing the mutated array after removing an emoji
+//create a function
 function clearThenRenderEmojis() {
-    emojiInput.value = ""; {
-    for (let i = 0; i < myEmojis.length; i++) {
+    emojiInput.value = ""; 
+    for (let i = 0; i < myEmojisCopy.length; i++) {
         const emojiRemove = document.createElement('span')
         emojiContainer.append(emojiRemove)
        }
      }
-    }
+    
     
 
 //add button to remove an emoji from the end of the array
