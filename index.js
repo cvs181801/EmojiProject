@@ -4,7 +4,7 @@ const emojisContained = document.getElementById("emojiContainer");
 // console.log(emojisContained)
 
 //add your emojis in an array
-const myEmojis = ["⏳", "🖤", "💀"]
+let myEmojis = ["⏳", "🖤", "💀"]
 
 
 //create a function to loop through emojis array
@@ -41,28 +41,28 @@ unshiftBtn.addEventListener("click", function(){
     }
 })
 // create a copy of the original array
-// const myEmojisCopy = [...myEmojis];
+const myEmojisCopy = [...myEmojis];
 
-// //create a function using the non-mutated copy of the array
-// function clearThenRenderEmojis() {
-//     emojiInput.value = ""; 
-//     for (let i = 0; i < myEmojisCopy.length; i++) {
-//         const emojiRemove = document.createElement('span')
-//         emojiContainer.append(emojiRemove)
-//        }
-//      }
+// create a function using the non-mutated copy of the array
+function clearThenRenderEmojis() {
+    let myEmojis = []; 
+    for (let i = 0; i < myEmojisCopy.length; i++) {
+        const emojiRemove = document.createElement('span')
+        emojiContainer.append(emojiRemove)
+    }
+ }
     
 
 //add button to remove an emoji from the end of the array
 const popBtn = document.getElementById("pop-btn")
 popBtn.addEventListener("click", function(){
     myEmojis.pop();
-    renderEmojis()
+    clearThenRenderEmojis()
 })
 
 //add button to remove emoji from beginning of array
 const shiftBtn = document.getElementById("shift-btn")
 shiftBtn.addEventListener("click", function(){
     myEmojis.shift();
-    renderEmojis()
+    clearThenRenderEmojis()
 })
