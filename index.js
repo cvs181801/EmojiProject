@@ -43,7 +43,7 @@ unshiftBtn.addEventListener("click", function(){
 // create a copy of the original array
 // const myEmojisCopy = [...myEmojis];
 
-// //create a function
+// //create a function using the non-mutated copy of the array
 // function clearThenRenderEmojis() {
 //     emojiInput.value = ""; 
 //     for (let i = 0; i < myEmojisCopy.length; i++) {
@@ -58,7 +58,7 @@ const popBtn = document.getElementById("pop-btn")
 popBtn.addEventListener("click", function(){
     myEmojis.pop();
     myEmojis = []
-    renderEmojis()
+    console.log(myEmojis);
 })
 
 //add button to remove emoji from beginning of array
@@ -66,5 +66,5 @@ const shiftBtn = document.getElementById("shift-btn")
 shiftBtn.addEventListener("click", function(){
     myEmojis.shift();
     myEmojis = []
-    renderEmojis()
+    console.log(myEmojis);
 })
