@@ -65,5 +65,5 @@ const shiftBtn = document.getElementById("shift-btn")
 shiftBtn.addEventListener("click", function(){
     myEmojis.shift();
     myEmojis = []
-})
-renderEmojis()
+}, renderEmojis()
+)
