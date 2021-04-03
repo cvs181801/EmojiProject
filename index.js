@@ -45,10 +45,12 @@ unshiftBtn.addEventListener("click", function(){
 const popBtn = document.getElementById("pop-btn")
 popBtn.addEventListener("click", function(){
     myEmojis.pop();
+    renderEmojis()
 })
 
 //add button to remove emoji from beginning of array
 const shiftBtn = document.getElementById("shift-btn")
 shiftBtn.addEventListener("click", function(){
     myEmojis.shift();
+    renderEmojis()
 })
