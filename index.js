@@ -38,3 +38,16 @@ unshiftBtn.addEventListener("click", function(){
         renderEmojis()
     }
 })
+//add button to remove an emoji from the end of the array
+const popBtn = document.getElementById("pop-btn")
+popBtn.addEventListener("click", function(){
+    myEmojis.pop();
+    renderEmojis()
+})
+
+//add button to remove emoji from ebeginning of array
+const shiftBtn = document.getElementById("shift-btn")
+shiftBtn.addEventListener("click", function(){
+    myEmojis.shift();
+    renderEmojis()
+})
