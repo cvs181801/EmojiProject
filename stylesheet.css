@@ -13,3 +13,13 @@ h1 {
     font-family: "copperplate", 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 4px #000000;
 }
+
+#push-btn,#unshift-btn {
+    background-color: #050127;
+    color: aqua;
+}
+
+#shift-btn,#pop-btn {
+    background-color: darkslategrey;
+    color: aqua;
+}
