@@ -11,9 +11,9 @@ for (let i = 0; i < myEmojis.length; i++) {
      renderEmojis.textContent = myEmojis[i]
      emojiContainer.append(renderEmojis)
 
-//     const pushEmojiButton = document.getElementById("push-btn")
+    const pushEmojiButton = document.getElementById("push-btn")
 
-// pushEmojiButton.addEventListener("click", function () {
-//     const emojiInput = document.getElementById("emoji-input")
-//     console.log(emojiInput)
-// })
+ pushEmojiButton.addEventListener("click", function () {
+     const emojiInput = document.getElementById("emoji-input")
+    console.log(emojiInput)
+ })
