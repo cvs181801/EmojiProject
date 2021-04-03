@@ -44,11 +44,12 @@ unshiftBtn.addEventListener("click", function(){
 })
 //create a function so that we're only seeing the mutated array after removing an emoji
 function clearThenRenderEmojis() {
-    emojiInput.value = ""; 
+    emojiInput.value = ""; {
     for (let i = 0; i < myEmojis.length; i++) {
         const emojiRemove = document.createElement('span')
         emojiContainer.append(emojiRemove)
        }
+     }
     }
     
 
