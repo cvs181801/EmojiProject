@@ -42,9 +42,9 @@ unshiftBtn.addEventListener("click", function(){
     }
 })
 //add button to remove an emoji from the end of the array
-const concatBtn = document.getElementById("concat-btn")
-concatBtn.addEventListener("click", function(){
-    myEmojis.concat();
+const popBtn = document.getElementById("pop-btn")
+popBtn.addEventListener("click", function(){
+    myEmojis.pop();
     renderEmojis()
 })
 
