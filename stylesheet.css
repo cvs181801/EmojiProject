@@ -47,7 +47,7 @@ h1 {
     font-size: 12px;
     color: blue;
     font-family: "copperplate", 'Courier New', Courier, monospace;
-    text-shadow: 2px 2px 4px #faf9f9;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #anchor {
