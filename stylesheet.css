@@ -87,3 +87,15 @@ a:link {
 a:visited {
     color:aquamarine;
 }
+
+#input-links-wrapper {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#buttons-wrapper {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
