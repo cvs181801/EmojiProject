@@ -4,6 +4,8 @@ html {
 
 body {
     margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     background-image: linear-gradient(#d95d63, #FFF);
 }
@@ -53,6 +55,7 @@ h1 {
 
 #mouse-over {
     font-size: 12px;
+    text-align: center;
     color: blue;
     font-family: "copperplate", 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 4px #000000;
@@ -60,6 +63,7 @@ h1 {
 
 #anchor {
     color: aqua;
+    text-align: center;
     font-family: "copperplate", 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 4px #000000;
 }
