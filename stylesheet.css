@@ -53,7 +53,16 @@ h1 {
     
 }
 
+#emoji-input {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #mouse-over {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 12px;
     text-align: center;
     color: blue;
@@ -62,6 +71,9 @@ h1 {
 }
 
 #anchor {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
     color: aqua;
     text-align: center;
     font-family: "copperplate", 'Courier New', Courier, monospace;
